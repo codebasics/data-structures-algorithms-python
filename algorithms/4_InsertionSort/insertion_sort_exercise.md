@@ -17,4 +17,4 @@ For example, given the sequence `[2, 1, 5, 7, 2, 0, 5]`, your algorithm should p
 ```
 
 
- [Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/4_InsertionSort/insertion_sort_exercise_soluiton_lomuto.py)
+ [Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/4_InsertionSort/insertion_sort_exercise_solution.py)
