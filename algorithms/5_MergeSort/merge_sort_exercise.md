@@ -1,6 +1,6 @@
 ### Merge Sort Exercise
 
-Modify [merge_sort function](https://github.com/codebasics/py/blob/master/Algorithms/5_MergeSort/merge_sort_final.py) such that it can sort following list of athletes as per the time taken by them in the marathon,
+Modify [merge_sort function](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/5_MergeSort/merge_sort_final.py) such that it can sort following list of athletes as per the time taken by them in the marathon,
 ```
 elements = [
         { 'name': 'vedanth',   'age': 17, 'time_hours': 1},
@@ -36,5 +36,4 @@ elements = [
     ]
 ``` 
 
-[Solution](https://github.com/codebasics/py/blob/master/Algorithms/5_MergeSort/merge_sort_exercise_solution.py)
-
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/5_MergeSort/merge_sort_exercise_solution.py)
