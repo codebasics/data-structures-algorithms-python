@@ -25,6 +25,7 @@ For example, given the sequence List:
 ]
 ```
 
+
 Your algorithm should generate sorted list:
 
 ```
