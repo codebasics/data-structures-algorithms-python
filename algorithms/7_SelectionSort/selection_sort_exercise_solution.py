@@ -1,22 +1,22 @@
 def multilevel_selection_sort(elements):
     for x in range(len(elements)):
-        minIndex = x
+        min_index = x
         for y in range(x, len(elements)):
-            if elements[y]['First Name'] < elements[minIndex]['First Name']:
-                minIndex = y  
-        if x != minIndex:
-            elements[x], elements[minIndex] = elements[minIndex], elements[x]
-    listOfFirstNames=list(set([i['First Name'] for i in elements]))
-    for FName in listOfFirstNames:
+            if elements[y]['First Name'] < elements[min_index]['First Name']:
+                min_index = y  
+        if x != min_index:
+            elements[x], elements[min_index] = elements[min_index], elements[x]
+    list_of_firstnames=list(set([i['First Name'] for i in elements]))
+    for firstname in list_of_firstnames:
         for x in range(len(elements)):
-            if elements[x]['First Name']==FName:
-                minIndex = x
+            if elements[x]['First Name']==firstname:
+                min_index = x
                 for y in range(x, len(elements)):
-                    if elements[y]['First Name']==FName:
-                        if elements[y]['Last Name'] < elements[minIndex]['Last Name']:
-                            minIndex = y  
-                if x != minIndex:
-                    elements[x], elements[minIndex] = elements[minIndex], elements[x]
+                    if elements[y]['First Name']==firstname:
+                        if elements[y]['Last Name'] < elements[min_index]['Last Name']:
+                            min_index = y  
+                if x != min_index:
+                    elements[x], elements[min_index] = elements[min_index], elements[x]
 
 if __name__ == '__main__':
     elements = [
