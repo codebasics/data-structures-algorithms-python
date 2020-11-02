@@ -4,15 +4,7 @@ def multilevel_selection_sort(elements,sort_by):
         for kx in (elements[x].keys()):
             set_of_indices.add(kx)
     
-    #
-    print(set_of_indices)
-    #
-
     set_of_indices.remove(sort_by)
-
-    #
-    print(set_of_indices)
-    #
 
     for x in range(len(elements)):
         min_index = x
