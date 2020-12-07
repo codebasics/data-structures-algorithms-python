@@ -19,7 +19,7 @@ data = {'A': {'B'},
 
 the resultant graph will be :-
 
-![alt text](https://github.com/nikhilailani/BFS_Traversal/blob/main/DFS_BFS_Graph.png)
+![alt text](https://github.com/nikhilailani/data-structures-algorithms-python/blob/master/algorithms/9_BreadthFirstSearch/DFS_BFS_Graph.png)
 
 
 **Explanation:** Here, selecting A as source node and D as destination node, the values are passed to the function.
@@ -31,4 +31,4 @@ Path exists!
 Path : A->B->D
 '''
 
-[Solution](https://github.com/nikhilailani/BFS_Traversal/blob/main/bfs_exercise_solution.py)
+[Solution](https://github.com/nikhilailani/data-structures-algorithms-python/blob/master/algorithms/9_BreadthFirstSearch/DFS_BFS_Graph.pngbfs_exercise_solution.py)
