@@ -1,5 +1,5 @@
 #function for depth first search
-def dfs(Data, start,emp,visited=set()):
+def dfs(data, start,emp,visited=set()):
     
     #if not visited print it
     if start not in visited:
@@ -12,17 +12,17 @@ def dfs(Data, start,emp,visited=set()):
     visited.add(start)
 
 
-    for i in Data[start] - visited:
+    for i in data[start] - visited:
         
         #if not visited go in depth of it
-        dfs(Data, i, visited)
+        dfs(data, i, visited)
         
     return 
 
 
 
 #sample data in dictionary form
-Data = {"karan": {"darshan","nikhil"},
+data = {"karan": {"darshan","nikhil"},
         "darshan": {"khantil", "tanuj"},
         'tanuj': {"nikhil"},
         "krinish": {"hetul"},
@@ -33,4 +33,4 @@ Data = {"karan": {"darshan","nikhil"},
 
 if __name__ == '__main__':
 
-    dfs(Data, "karan","karan")
+    dfs(data, "karan","karan")
