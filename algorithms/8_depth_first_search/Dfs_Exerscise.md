@@ -7,7 +7,7 @@ Given a Graph in Dictionary Form
 -print all employees who are reporting to given employee
 
 ```
-Data = {"karan": {"darshan","nikhil"},
+data = {"karan": {"darshan","nikhil"},
         "darshan": {"khantil", "tanuj"},
         'tanuj': {"nikhil"},
         "krinish": {"hetul"},
