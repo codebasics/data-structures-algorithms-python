@@ -31,4 +31,4 @@ Path exists!
 Path : A->B->D
 '''
 
-[Solution](https://github.com/nikhilailani/data-structures-algorithms-python/blob/master/algorithms/9_BreadthFirstSearch/DFS_BFS_Graph.pngbfs_exercise_solution.py)
+[Solution](https://github.com/nikhilailani/data-structures-algorithms-python/blob/master/algorithms/9_BreadthFirstSearch/bfs_exercise_solution.py)
