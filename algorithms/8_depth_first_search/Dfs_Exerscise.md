@@ -1,8 +1,8 @@
 # DFS Exercise
 
-![Overview : Employee hierarchy](https://github.com/beladiyadarshan/Dfs/blob/main/emp.png?raw=true)
+![Overview : Employee hierarchy](https://github.com/beladiyadarshan/DFS/blob/main/emp.png?raw=true)
 
-Given a Graph in Dictionary Form.You have to print all employees who are reporting to given employee
+Given a graph in dictionary form, print all employees reporting to given employee.
 
 ```
 data = {"karan": {"darshan","nikhil"},
@@ -16,27 +16,21 @@ data = {"karan": {"darshan","nikhil"},
     
  ```
  
- here darshan and nikhil are reporting to karan and so on....
+ Here, Darshan and Nikhil are reporting to Karan and so on...
  
  ```
- Q.find all employees who are reporting to karan
-         -do dfs on karan and print all the employees
+ Q.Find all employees who are reporting to Karan
+        -perform DFS on Karan and print all the employees
  ```
 
-**Explanation :**
+**Explanation:**
 
--so here we wants to find all the childs of karan 
+-So here, we want to find all the children of Karan.
 
--we will do dfs on karan and then we will traverse all the childs of karan that are not visited 
+-We will perform DFS on Karan and then traverse all the children of Karan which are unvisited. 
 
-**output will be :**
+**Output:**
 
 karan : nikhil darshan tanuj khantil 
 
-[Solution](https://github.com/beladiyadarshan/Dfs/blob/main/Dfs_exercise.py)
-
-
- 
-
-
-
+[Solution](https://github.com/beladiyadarshan/DFS/blob/main/DFS_exercise.py)
