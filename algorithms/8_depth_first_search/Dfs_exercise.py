@@ -1,11 +1,11 @@
 #function for depth first search
-def dfs(data, start,emp,visited=set()):
+def dfs(data, start,employee,visited=set()):
     
     #if not visited print it
     if start not in visited:
         print(start,end=" ")
         
-        if start==emp:
+        if start==employee:
             print(":",end=" ")
         
     
