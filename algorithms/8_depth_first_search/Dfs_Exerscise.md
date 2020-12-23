@@ -1,10 +1,8 @@
 # DFS Exercise
 
-![alt text](https://github.com/beladiyadarshan/Dfs/blob/main/emp.png?raw=true)
+![Overview : Employee hierarchy](https://github.com/beladiyadarshan/Dfs/blob/main/emp.png?raw=true)
 
-Given a Graph in Dictionary Form 
-
--print all employees who are reporting to given employee
+Given a Graph in Dictionary Form.You have to print all employees who are reporting to given employee
 
 ```
 data = {"karan": {"darshan","nikhil"},
