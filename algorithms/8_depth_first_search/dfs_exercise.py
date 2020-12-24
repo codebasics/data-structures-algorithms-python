@@ -17,11 +17,11 @@ def dfs(data, start, employee, visited=set()):
 data = {
     "karan": {"darshan", "nikhil"},
     "darshan": {"khantil", "tanuj"},
-    'tanuj': {"nikhil"},
+    "tanuj": {"nikhil"},
     "krinish": {"hetul"},
     "khantil": set(),
     "nikhil": set()
-    }
+}
 
 
 if __name__ == '__main__':
