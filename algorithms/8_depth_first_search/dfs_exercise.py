@@ -1,5 +1,5 @@
 # function for depth first search
-def dfs(data, start, employee, visited=set()):
+def find_employees(data, start, employee, visited=set()):
     # if not visited print it
     if start not in visited:
         print(start, end=" ")
@@ -9,7 +9,7 @@ def dfs(data, start, employee, visited=set()):
 
     for i in data[start] - visited:
         # if not visited go in depth of it
-        dfs(data, i, visited)
+        find_employees(data, i, visited)
     return
 
 
@@ -26,4 +26,4 @@ data = {
 
 if __name__ == '__main__':
 
-    dfs(data, "karan", "karan")
+    find_employees(data, "karan", "karan")
