@@ -6,7 +6,7 @@ Implement a function to find whether a path exists for a given set of airline ro
 Example: A, B, C, D, E, F are the nodes of the graph.
 
 
-For example, you are given following data: 
+For example, if you are given following data: 
 
 ```
 data = {
@@ -19,7 +19,7 @@ data = {
 }
 ```
 
-the resultant graph will be :-
+The resultant graph will be:
 
 ![alt text](https://github.com/nikhilailani/data-structures-algorithms-python/blob/master/algorithms/9_BreadthFirstSearch/DFS_BFS_Graph.png)
 
