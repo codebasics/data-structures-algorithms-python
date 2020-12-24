@@ -5,7 +5,8 @@
 Given a graph in dictionary form, print all employees reporting to given employee.
 
 ```
-data = {"karan": {"darshan","nikhil"},
+data = {
+       "karan": {"darshan","nikhil"},
         "darshan": {"khantil", "tanuj"},
         'tanuj': {"nikhil"},
         "krinish": {"hetul"},
