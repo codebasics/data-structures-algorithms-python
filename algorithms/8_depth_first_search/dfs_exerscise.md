@@ -6,13 +6,13 @@ Given a graph in dictionary form, print all employees reporting to given employe
 
 ```
 data = {
-       "karan": {"darshan","nikhil"},
+        "karan": {"darshan","nikhil"},
         "darshan": {"khantil", "tanuj"},
         'tanuj': {"nikhil"},
         "krinish": {"hetul"},
         "khantil" : set(),
         "nikhil" : set()
-        }
+ }
         
     
  ```
