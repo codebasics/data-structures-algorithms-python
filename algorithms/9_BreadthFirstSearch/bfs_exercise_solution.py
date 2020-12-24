@@ -5,7 +5,7 @@ def bfs(data, start, end, visited=[]):
         current_node = queue.pop(0)
         if current_node==end:
             print("Path exists!")
-            print("Path : " + "->".join(visited) + "->"+end)
+            print("Path: " + "->".join(visited) + "->" + end)
             return
         visited.append(current_node)
         
