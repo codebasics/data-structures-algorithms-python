@@ -11,4 +11,4 @@
     ```
    This should return 5,6,7 as indices containing number 15 in the array
     
-[Solution](https://github.com/codebasics/py/blob/master/Algorithms/1_BinarySearch/binary_search_exercise_solution.py)    
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/1_BinarySearch/binary_search_exercise_solution.py)    
