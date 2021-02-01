@@ -13,7 +13,7 @@ class LinkedList:
             return
         itr = self.head
         while itr:
-            print(itr.data, end="-->") if itr.next is not None else print(itr.data)
+            print(itr.data, end="-->") if itr.next else print(itr.data)
             itr = itr.next
 
     def get_length(self):
