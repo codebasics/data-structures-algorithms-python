@@ -12,11 +12,9 @@ class LinkedList:
             print("Linked list is empty")
             return
         itr = self.head
-        llstr = ''
         while itr:
-            llstr += str(itr.data)+' --> ' if itr.next else str(itr.data)
+            print(itr.data, end="-->") if itr.next is not None else print(itr.data)
             itr = itr.next
-        print(llstr)
 
     def get_length(self):
         count = 0
