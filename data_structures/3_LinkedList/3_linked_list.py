@@ -84,16 +84,57 @@ class LinkedList:
         self.head = None
         for data in data_list:
             self.insert_at_end(data)
-
-
+    
+    def insert_after_value(self, data_after, val_insert):
+        itr = self.head
+        while itr:
+            if itr.data == data_after:
+                node = Node(val_insert, itr.next)
+                itr.next = node
+                break
+            itr = itr.next
+        if itr.next == None:
+            raise Exception:
+                print("invalid data")
+                
+    def remove_by_value(self, del_data):
+        itr = self.head
+        prev = None
+        count = 0
+        while itr.next:
+            if self.get_length() == 0:
+                raise Exception("Empty List")
+          
+            itr = self.head
+            prev = None
+            count = 0
+            while itr:
+                if itr.data == del_data:
+                    if count == 0:
+                        self.head = itr.next
+                        break
+                    else:
+                        prev.next = itr.next
+                        break
+                prev = itr
+                itr = itr.next
+                count += 1
+                if itr == None:
+                    raise Exception("Data not in list") 
+            
 if __name__ == '__main__':
     ll = LinkedList()
     ll.insert_values(["banana","mango","grapes","orange"])
-    ll.insert_at(1,"blueberry")
-    ll.remove_at(2)
     ll.print()
-
-    ll.insert_values([45,7,12,567,99])
-    ll.insert_at_end(67)
+    ll.insert_after_value("mango","apple") # insert apple after mango
+    ll.print()
+    ll.remove_by_value("orange") # remove orange from linked list
+    ll.print()
+    ll.remove_by_value("figs")
+    ll.print()
+    ll.remove_by_value("banana")
+    ll.remove_by_value("mango")
+    ll.remove_by_value("apple")
+    ll.remove_by_value("grapes")
     ll.print()
 
