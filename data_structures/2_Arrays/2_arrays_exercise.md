@@ -17,7 +17,7 @@ Create a list to store these monthly expenses and using that find out,
     got a refund of 200$. Make a correction to your monthly expense list
     based on this
 
-[Solution](https://github.com/codebasics/py/blob/master/DataStructures/2_Arrays/Solution/1_expenses.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/2_Arrays/Solution/1_expenses.py)
 
 2. You have a list of your favourite marvel super heros.
 ```
@@ -35,11 +35,11 @@ Using this find out,
        Do that with one line of code.
     5. Sort the heros list in alphabetical order (Hint. Use dir() functions to list down all functions available in list)
 
-[Solution](https://github.com/codebasics/py/blob/master/DataStructures/2_Arrays/Solution/2_marvel.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/2_Arrays/Solution/2_marvel.py)
 
 
 3. Create a list of all odd numbers between 1 and a max number.
 Max number is something you need to take from a user using input() function
 
-[Solution](https://github.com/codebasics/py/blob/master/DataStructures/2_Arrays/Solution/3_odd_even_numbers.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/2_Arrays/Solution/3_odd_even_numbers.py)
 
