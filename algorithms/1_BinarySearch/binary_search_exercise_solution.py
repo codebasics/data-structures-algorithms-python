@@ -57,6 +57,7 @@ def find_all_occurances(numbers, number_to_find):
 
 if __name__ == '__main__':
     numbers = [1,4,6,9,11,15,15,15,17,21,34,34,56]
+    numbers.sort()
     number_to_find = 15
     indices = find_all_occurances(numbers, number_to_find)
     print(f"Indices of occurances of {number_to_find} are {indices}")
