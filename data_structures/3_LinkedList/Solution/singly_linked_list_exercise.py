@@ -11,11 +11,10 @@ class LinkedList:
         if self.head is None:
             print("Linked list is empty")
             return
-
         itr = self.head
         llstr = ''
         while itr:
-            llstr += str(itr.data) + ' --> '
+            llstr += str(itr.data)+' --> ' if itr.next else str(itr.data)
             itr = itr.next
         print(llstr)
 
@@ -85,56 +84,45 @@ class LinkedList:
         self.head = None
         for data in data_list:
             self.insert_at_end(data)
-
-
+    
     def insert_after_value(self, data_after, data_to_insert):
-        if self.head is None:
-            return
-
-        if self.head.data==data_after:
-            self.head.next = Node(data_to_insert,self.head.next)
-            return
-
+        present = False
         itr = self.head
         while itr:
             if itr.data == data_after:
-                itr.next = Node(data_to_insert, itr.next)
+                present = True
+                node = Node(data_to_insert, itr.next)
+                itr.next = node
                 break
-
             itr = itr.next
+        if present == False:
+            raise Exception(f'{data_after} is absent from the list')
 
     def remove_by_value(self, data):
-        if self.head is None:
-            return
-
-        if self.head.data == data:
-            self.head = self.head.next
-            return
-
+        present = False
         itr = self.head
-        while itr.next:
-            if itr.next.data == data:
-                itr.next = itr.next.next
+        count = 0
+        remove_index = None
+        while itr:
+            if itr.data == data:
+                present = True
+                remove_index = count
                 break
             itr = itr.next
+            count += 1
+        if present == False:
+            raise Exception(f'{data} is absent from the list')
+        self.remove_at(remove_index)
 
 if __name__ == '__main__':
     ll = LinkedList()
     ll.insert_values(["banana","mango","grapes","orange"])
-    ll.print()
-    ll.insert_after_value("mango","apple")
-    ll.print()
-    ll.remove_by_value("orange")
-    ll.print()
-    ll.remove_by_value("figs")
-    ll.print()
-    ll.remove_by_value("banana")
-    ll.remove_by_value("mango")
-    ll.remove_by_value("apple")
-    ll.remove_by_value("grapes")
+    # ll.insert_at(1,"blueberry")
+    # ll.remove_at(2)
+    ll.insert_after_value("mango", "test_fruite")
+    ll.remove_by_value("mang")
     ll.print()
 
     # ll.insert_values([45,7,12,567,99])
     # ll.insert_at_end(67)
     # ll.print()
-
