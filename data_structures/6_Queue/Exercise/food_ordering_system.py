@@ -11,9 +11,9 @@ class Queue:
         self.buffer.appendleft(val)
 
     def dequeue(self):
-        if len(self.buffer)==0:
-            print("Queue is empty")
-            return
+        # if len(self.buffer)==0:
+        #     print("Queue is empty")
+        #     return
 
         return self.buffer.pop()
 
@@ -34,10 +34,14 @@ def place_orders(orders):
 
 def serve_orders():
     time.sleep(1)
-    while True:
+    while food_order_queue.size() > 0:
         order = food_order_queue.dequeue()
         print("Now serving: ",order)
         time.sleep(2)
+
+        if food_order_queue.size() == 0:
+            print("Queue is empty")
+            return
 
 if __name__ == '__main__':
     orders = ['pizza','samosa','pasta','biryani','burger']
