@@ -117,6 +117,23 @@ class LinkedList:
                 itr.next = itr.next.next
                 break
             itr = itr.next
+            
+    #Sir, the way I solved it.
+    def remove_by_value(self, data):
+		if self.head.data == data:
+			self.head = self.head.next
+			return
+
+		itr = self.head
+		itr2 = None
+		while itr:
+			if not itr.data == data:
+				itr2 = itr
+				itr = itr.next
+
+			else:
+				itr2.next = itr.next
+				break  
 
 if __name__ == '__main__':
     ll = LinkedList()
