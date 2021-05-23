@@ -12,8 +12,8 @@ class Queue:
 
     def dequeue(self):
         if len(self.buffer)==0:
-            print("Queue is empty")
-            return
+            print("Exiting coz Queue is empty")
+            return exit()
 
         return self.buffer.pop()
 
