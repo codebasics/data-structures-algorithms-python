@@ -1,7 +1,7 @@
 ### Binary Tree Part 2 Exercise
 
 Modify delete method in class [BinarySearchTreeNode class](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/9_Binary_Tree_2/binary_tree_part_2.py)
-to use min element from left subtree. You will remove lines marked with ---> and use max value from left subtree
+to use max element from left subtree. You will remove lines marked with ---> and use max value from left subtree
 
 ```
     def delete(self, val):
