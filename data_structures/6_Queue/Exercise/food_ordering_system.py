@@ -34,7 +34,7 @@ def place_orders(orders):
 
 def serve_orders():
     time.sleep(1)
-    while True:
+    while not food_order_queue.is_empty():
         order = food_order_queue.dequeue()
         print("Now serving: ",order)
         time.sleep(2)
