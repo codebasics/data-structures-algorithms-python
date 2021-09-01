@@ -6,7 +6,7 @@ Add following methods to [BinarySearchTreeNode class](https://github.com/codebas
     2. find_max(): finds maximum element in entire binary tree
     3. calculate_sum(): calcualtes sum of all elements
     4. post_order_traversal(): performs post order traversal of a binary tree
-    5. pre_order_traversal(): perofrms pre order traversal of a binary tree
+    5. pre_order_traversal(): performs pre order traversal of a binary tree
 
 [Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/8_Binary_Tree_1/Exercise/binary_tree_part_1_exercise.py)
 
