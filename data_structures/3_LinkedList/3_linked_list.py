@@ -81,7 +81,6 @@ class LinkedList:
             count+=1
 
     def insert_values(self, data_list):
-        self.head = None
         for data in data_list:
             self.insert_at_end(data)
 
