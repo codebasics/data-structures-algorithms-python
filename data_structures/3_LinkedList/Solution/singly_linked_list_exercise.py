@@ -110,13 +110,20 @@ class LinkedList:
         if self.head.data == data:
             self.head = self.head.next
             return
-
+        
+        initial_length = self.get_length()
+        count = 0
         itr = self.head
         while itr.next:
             if itr.next.data == data:
                 itr.next = itr.next.next
                 break
             itr = itr.next
+            count += 1
+
+        if count == initial_length:
+            raise Exception("The specified element is not present in the linked list")
+
 
 if __name__ == '__main__':
     ll = LinkedList()
