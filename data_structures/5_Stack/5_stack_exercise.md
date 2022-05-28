@@ -16,3 +16,8 @@
     ```
 
 [Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/5_Stack/Exercise/balance_paran.py)
+
+Author: Dhaval Patel
+
+ALl the best, Coders!!!
+Let's Do it...
