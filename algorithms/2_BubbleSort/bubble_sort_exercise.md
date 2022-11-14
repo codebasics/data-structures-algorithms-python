@@ -36,5 +36,5 @@ elements = [
     ]
 ``` 
 
-[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithmsAlgorithms/2_BubbleSort/bubble_sort_exercise_solution.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/2_BubbleSort/bubble_sort_exercise_solution.py)
 
