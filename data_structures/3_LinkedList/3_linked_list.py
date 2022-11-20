@@ -29,19 +29,21 @@ class LinkedList:
 
     def insert_at_begining(self, data):
         node = Node(data, self.head)
+        
+        if self.head is None:
+            self.head = node
+            self.tail = node
+            return 
+        node.next = self.head
         self.head = node
 
     def insert_at_end(self, data):
         if self.head is None:
-            self.head = Node(data, None)
-            return
-
-        itr = self.head
-
-        while itr.next:
-            itr = itr.next
-
-        itr.next = Node(data, None)
+            self.insert_at_begining(data)
+            return 
+        node = Node(data)
+        self.tail.next = node
+        self.tail = node
 
     def insert_at(self, index, data):
         if index<0 or index>self.get_length():
