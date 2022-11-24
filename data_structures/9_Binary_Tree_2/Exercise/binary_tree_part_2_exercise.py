@@ -61,7 +61,8 @@ class BinarySearchTreeNode:
             elif self.left is None:
                 return self.right
             elif self.right is None:
-                return self.right
+                # return self.right
+                return self.left # because we don't want to loose the left subtree, suppose [2, 4, 3] where 2 is root and we removed 4
 
             max_val = self.left.find_max()
             self.data = max_val
