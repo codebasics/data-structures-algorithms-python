@@ -1,28 +1,20 @@
-# you can use this to sort strings too
-def bubble_sort(elements, key=None):
-    size = len(elements)
-
-    for i in range(size-1):
-        swapped = False
-        for j in range(size-1-i):
-            a = elements[j][key]
-            b = elements[j+1][key]
-            if a > b:
-                tmp = elements[j]
-                elements[j] = elements[j+1]
-                elements[j+1] = tmp
+def bubblesort(arr,param):
+    n = len(arr)
+    swapped = False
+    for i in range(n-1):
+        for j in range(n-i-1):
+            if arr[j][param] > arr[j+1][param]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
                 swapped = True
-
-        if not swapped:
+        if swapped is False:
             break
 
-if __name__ == '__main__':
-    elements = [
-        { 'name': 'mona',   'transaction_amount': 1000, 'device': 'iphone-10'},
-        { 'name': 'dhaval', 'transaction_amount': 400,  'device': 'google pixel'},
-        { 'name': 'kathy',  'transaction_amount': 200,  'device': 'vivo'},
-        { 'name': 'aamir',  'transaction_amount': 800,  'device': 'iphone-8'},
-    ]
 
-    bubble_sort(elements, key='transaction_amount')
-    print(elements)
+elements = [
+        { 'name': 'kathy',  'transaction_amount': 200,  'device': 'vivo'},
+        { 'name': 'dhaval', 'transaction_amount': 400,  'device': 'google pixel'},
+        { 'name': 'aamir',  'transaction_amount': 800,  'device': 'iphone-8'},
+        { 'name': 'mona',   'transaction_amount': 1000, 'device': 'iphone-10'},
+    ]
+bubblesort(elements,param="transaction_amount")
+print(elements)
