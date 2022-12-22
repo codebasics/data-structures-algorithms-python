@@ -79,11 +79,16 @@ class LinkedList:
 
             itr = itr.next
             count+=1
-
+    
     def insert_values(self, data_list):
-        self.head = None
-        for data in data_list:
-            self.insert_at_end(data)
+        self.head= None   
+        self.head = Node(data_list[0], None)
+        for data in range(1, len(data_list)):
+            itr = self.head           
+            while itr.next:           
+                itr = itr.next        
+
+            itr.next = Node(data_list[data], None)
 
 
 if __name__ == '__main__':
