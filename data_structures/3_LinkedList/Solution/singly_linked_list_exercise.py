@@ -91,9 +91,6 @@ class LinkedList:
         if self.head is None:
             return
 
-        if self.head.data==data_after:
-            self.head.next = Node(data_to_insert,self.head.next)
-            return
 
         itr = self.head
         while itr:
