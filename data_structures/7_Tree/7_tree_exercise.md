@@ -4,7 +4,7 @@
 
     ![ss](management_both.PNG)
 
-Extent [tree class](https://github.com/codebasics/py/blob/master/DataStructures/7_Tree/7_tree.py) built in our
+Extent [tree class](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/7_Tree/7_tree.py) built in our
 main tutorial so that it takes **name** and **designation** in data part of TreeNode class.
 Now extend print_tree function such that it can print either name tree, designation tree or name and designation tree. As shown below,
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     root_node.print_tree("both") # prints both (name and designation) hierarchy
 ```
 
-[Solution](https://github.com/codebasics/py/blob/master/DataStructures/7_Tree/Exercise/management_hierarchy.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/7_Tree/Exercise/management_hierarchy.py)
 
 2. Build below location tree using **TreeNode** class
 
@@ -29,6 +29,6 @@ Now modify print_tree method to take tree level as input. And that should print 
 
    ![](location_trees_all.png)
 
-[Solution](https://github.com/codebasics/py/blob/master/DataStructures/7_Tree/Exercise/location_hierarchy.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/7_Tree/Exercise/location_hierarchy.py)
 
 

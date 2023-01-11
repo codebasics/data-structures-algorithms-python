@@ -1,6 +1,6 @@
 ### Bubble Sort Exercise
 
-Modify [bubble_sort function](https://github.com/codebasics/py/blob/master/Algorithms/2_BubbleSort/bubble_sort.py) such that it can sort following list of transactions happening in an electronic store,
+Modify [bubble_sort function](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/2_BubbleSort/bubble_sort.py) such that it can sort following list of transactions happening in an electronic store,
 ```
 elements = [
         { 'name': 'mona',   'transaction_amount': 1000, 'device': 'iphone-10'},
@@ -36,5 +36,5 @@ elements = [
     ]
 ``` 
 
-[Solution](https://github.com/codebasics/py/blob/master/Algorithms/2_BubbleSort/bubble_sort_exercise_solution.py)
+[Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/algorithms/2_BubbleSort/bubble_sort_exercise_solution.py)
 
