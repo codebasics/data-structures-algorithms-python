@@ -1,12 +1,14 @@
 def multilevel_selection_sort(elements, sort_by_list):
-    for sort_by in sort_by_list[-1::-1]:
-        for x in range(len(elements)):
-            min_index = x
-            for y in range(x, len(elements)):
-                if elements[y][sort_by] < elements[min_index][sort_by]:
+    for x in range(len(elements)):
+        min_index = x
+        for y in range(x, len(elements)):
+            if elements[y][sort_by_list[0]] < elements[min_index][sort_by_list[0]]:
+                min_index = y
+            elif elements[y][sort_by_list[0]] == elements[min_index][sort_by_list[0]]:
+                if elements[y][sort_by_list[1]] < elements[min_index][sort_by_list[1]]:
                     min_index = y
-            if x != min_index:
-                elements[x], elements[min_index] = elements[min_index], elements[x]
+        if x != min_index:
+            elements[x], elements[min_index] = elements[min_index], elements[x]
 
 
 if __name__ == '__main__':
