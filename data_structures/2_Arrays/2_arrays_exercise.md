@@ -1,6 +1,6 @@
 # Exercise: Array DataStructure
 
-1. Let us say your expense for every month are listed below,
+1. Let us say your expenses for every month are listed below,
 	1. January -  2200
  	2. February - 2350
     3. March - 2600
@@ -19,7 +19,7 @@ Create a list to store these monthly expenses and using that find out,
 
 [Solution](https://github.com/codebasics/data-structures-algorithms-python/blob/master/data_structures/2_Arrays/Solution/1_expenses.py)
 
-2. You have a list of your favourite marvel super heros.
+2. You have a list of your favourite Marvel superheroes.
 ```
 heros=['spider man','thor','hulk','iron man','captain america']
 ```
