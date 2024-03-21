@@ -75,10 +75,10 @@ elements = ["mona", "dhaval", "aamir", "tina", "chang"]
 bubble_sort(elements)
 print(elements)
 
-elements2 = [ { 'name': 'kathy',  'transaction_amount': 200,  'device': 'vivo'},
+elementsv2 = [ { 'name': 'kathy',  'transaction_amount': 200,  'device': 'vivo'},
         { 'name': 'dhaval', 'transaction_amount': 400,  'device': 'google pixel'},
         { 'name': 'aamir',  'transaction_amount': 800,  'device': 'iphone-8'},
         { 'name': 'mona',   'transaction_amount': 1000, 'device': 'iphone-10'},
     ]
-bubble_sort_by_key(elements2,key='transaction_amount')
-print(elements2)
+bubble_sort_by_key(elementsv2,key='transaction_amount')
+print(elementsv2)
